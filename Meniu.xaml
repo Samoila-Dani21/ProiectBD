@@ -1,0 +1,30 @@
+﻿<Window x:Class="OnlineShop.Meniu"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:OnlineShop"
+        mc:Ignorable="d"
+        Title="Meniu" Height="382" Width="800">
+    <Grid Margin="0,0,0,8">
+        <ListBox Name="listTipProdus" d:ItemsSource="{d:SampleData ItemCount=5}" Margin="207,15,445,207" SelectionChanged="listTipProdus_SelectionChanged"/>
+        <Label Content="Tip Produs" HorizontalAlignment="Left" Margin="207,156,0,0" VerticalAlignment="Top"/>
+        <ListBox Name="listProduse"  d:ItemsSource="{d:SampleData ItemCount=5}" Margin="395,15,257,207" SelectionChanged="listProduse_SelectionChanged"/>
+        <Label Content="Produse" HorizontalAlignment="Left" Margin="395,156,0,0" VerticalAlignment="Top"/>
+        <TextBox Name="tipProdusTextBox" HorizontalAlignment="Left" Margin="207,182,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="120"/>
+        <TextBox x:Name="produseTextBox" HorizontalAlignment="Left" Margin="395,182,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="120"/>
+        <Button Content="Iesire" HorizontalAlignment="Left" Margin="526,287,0,0" VerticalAlignment="Top" Click="Iesire_Button_Click"/>
+        <ListBox Name="listCaracteristici" d:ItemsSource="{d:SampleData ItemCount=5}" Margin="576,15,70,207"/>
+        <Button Click="Cumpara_Button_Click" Content="Cumpara" HorizontalAlignment="Left" Margin="324,287,0,0" VerticalAlignment="Top" />
+        <Button Content="Statistici" HorizontalAlignment="Left" Margin="104,287,0,0" VerticalAlignment="Top" Click="Statistici_Button_Click"/>
+        <Label Content="Data: " HorizontalAlignment="Left" Margin="3,2,0,0" VerticalAlignment="Top"/>
+        <TextBox IsReadOnly="True" Name="dataTextBox" HorizontalAlignment="Left" HorizontalContentAlignment="Center" Margin="44,6,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="120"/>
+        <Label Content="Cod Client: " HorizontalAlignment="Left" Margin="3,28,0,0" VerticalAlignment="Top"/>
+        <TextBox IsReadOnly="True" x:Name="codClientTextBox" HorizontalAlignment="Left" HorizontalContentAlignment="Center" Margin="79,32,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="120"/>
+        <Label Content="Numar Produse" HorizontalAlignment="Left" Margin="576,165,0,0" VerticalAlignment="Top"/>
+        <Label Content="Suma" HorizontalAlignment="Left" Margin="576,191,0,0" VerticalAlignment="Top"/>
+        <TextBox  Name="numarProduseTextBox" HorizontalAlignment="Left" Margin="670,169,0,0" TextWrapping="Wrap" Text="1" VerticalAlignment="Top" Width="60"/>
+        <TextBox  IsReadOnly="True" Name="sumaTextBox" HorizontalAlignment="Left" Margin="670,195,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="60"/>
+
+    </Grid>
+</Window>

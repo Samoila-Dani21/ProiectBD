@@ -1,0 +1,21 @@
+﻿<Window Name ="Logare" x:Class="OnlineShop.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:OnlineShop"
+        mc:Ignorable="d"
+        Title="Logare" Height="350" Width="600">
+    <Grid Margin="0,0,10,19">
+        <Button Name="Inainte" Click="Button_Click_Inainte" Content="Inainte" HorizontalAlignment="Left" Margin="170,188,0,0" VerticalAlignment="Top" Height="34" Width="110"/>
+        <Button Content="Iesire" Click="Button_Click_Iesire" HorizontalAlignment="Left" Margin="300,188,0,0" VerticalAlignment="Top" Width="110" Height="34"/>
+        <Button Content="Creare cont" Click="Button_Click_Creare" HorizontalAlignment="Center" Margin="0,226,0,0" VerticalAlignment="Top" Height="34" Width="152"/>
+        <Label Content="Nume de utilizator" HorizontalAlignment="Left" Margin="152,96,0,0" VerticalAlignment="Top" Height="44" Width="136"/>
+        <Label Content="Parola" HorizontalAlignment="Left" Margin="152,123,0,0" VerticalAlignment="Top" Width="129" Height="44"/>
+        <TextBox x:Name="numeUtilizator" ToolTip="Email sau Numarul de telefon" HorizontalAlignment="Left" Margin="295,96,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="150" Height="22"/>
+        <TextBox x:Name="parolaTextBox" HorizontalAlignment="Left" Margin="295,123,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="150" Height="22" RenderTransformOrigin="0.5,0.5" TextChanged="parolaTextBox_TextChanged"/>
+        <CheckBox Checked="Afisare_parola_Checked" Unchecked="Afisare_parola_Unchecked" x:Name="Afisare_parola" Content="Afiseaza parola" HorizontalAlignment="Left" Margin="295,158,0,0" VerticalAlignment="Top" RenderTransformOrigin="0.545,0.286"/>
+        <PasswordBox Name="parolaBox" Visibility="Hidden" HorizontalAlignment="Left" Margin="295,123,0,0"  VerticalAlignment="Top" Width="150" Height="22" RenderTransformOrigin="0.5,0.5"/>
+
+    </Grid>
+</Window>

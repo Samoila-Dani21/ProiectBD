@@ -1,0 +1,15 @@
+﻿<Window x:Class="OnlineShop.AdminMeniu"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:OnlineShop"
+        mc:Ignorable="d"
+        Title="Admin Meniu" Height="341" Width="402">
+    <Grid>
+        <Button Content="Informatii Client" Click="Client_Button_Click" HorizontalAlignment="Left" Margin="94,84,0,0" VerticalAlignment="Top" Height="169" Width="231"/>
+        <Button Content="Informatii Comenzi" Click="Comenzi_Button_Click" HorizontalAlignment="Left" Margin="220,271,0,0" VerticalAlignment="Top"/>
+        <Button Content="Informatii Produse" Click="Produse_Button_Click" HorizontalAlignment="Left" Margin="94,271,0,0" VerticalAlignment="Top"/>
+
+    </Grid>
+</Window>
